@@ -1,0 +1,4 @@
+#Fri Sep 11 14:22:48 WIB 2020
+base.0=/home/rd/Documents/Aturtoko/atur-belanja/AturBelanja/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
