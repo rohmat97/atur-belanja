@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/rd/Documents/Aturtoko/atur-belanja/AturBelanja/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml",
+            "outputFile": "/home/rd/Documents/Aturtoko/atur-belanja/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml",
             "map": [
                 {
                     "source": "/home/rd/.gradle/caches/transforms-2/files-2.1/4e9115bb6cadd5add63177d7a444f767/jetified-play-services-basement-17.0.0/res/values-zu/values.xml",
