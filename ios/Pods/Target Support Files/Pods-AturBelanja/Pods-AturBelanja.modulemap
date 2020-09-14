@@ -1,0 +1,6 @@
+module Pods_AturBelanja {
+  umbrella header "Pods-AturBelanja-umbrella.h"
+
+  export *
+  module * { export * }
+}
