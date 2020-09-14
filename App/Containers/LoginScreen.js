@@ -1,8 +1,8 @@
 import { symbol } from 'prop-types'
 import React, { Component } from 'react'
-import { Image, Text, KeyboardAvoidingView, Button } from 'react-native'
+import { Image, Text, KeyboardAvoidingView, Button, Dimensions } from 'react-native'
 import { View } from 'react-native-animatable'
-import { TextInput } from 'react-native-gesture-handler'
+import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 import { connect } from 'react-redux'
 import { Images } from '../Themes'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
@@ -25,8 +25,10 @@ class LoginScreen extends Component {
     }
     // Login(data)
   }
-
+  
   render () {
+    const width = Dimensions.get('screen').width
+    const heigth  =Dimensions.get('screen').height
     return (
       <View style={{flex:1, justifyContent:'flex-start', alignItems:'center', top:'10%'}}>  
         <Text style={[styles.titleText,{fontSize:32,marginBottom:24}]}>Welcome Back !</Text>
@@ -39,20 +41,19 @@ class LoginScreen extends Component {
         <TextInput style={styles.textInput} value={this.state.password} onChangeText={(password=>this.setState({password}))}></TextInput>
         <Text style={{color:'red'}}>Forgot Password ?</Text>
         <View style={{justifyContent:'space-around',alignItems:'center',flexDirection:'row',width:'100%',position:'absolute',bottom:'15%'}}>
-          <View
-            style={{width:'40%',alignItems:'center',padding:20, backgroundColor:'blue', borderRadius:8}}
+          <TouchableOpacity
+            style={{width:width*0.45,alignItems:'center',padding:20, backgroundColor:'blue', borderRadius:8}}
             onPress={() =>this.Submit()}
           >
             <Text style={{color:'white'}}>Login</Text>
-          </View>
-          <View
-            info
-            style={{width:'40%',alignItems:'center',padding:20,backgroundColor:'green',borderRadius:8}}
-            onPress={() =>this.Submit()
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{width:width*0.45,alignItems:'center',padding:20,backgroundColor:'green',borderRadius:8}}
+            onPress={() =>this.props.navigation.navigate('SingupScreen')
             }
           >
             <Text style={{color:'white'}}>Signup</Text>
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     )
