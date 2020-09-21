@@ -1,6 +1,6 @@
 // leave off @2x/@3x
 const images = {
-  logo: require('../Images/ir.png'),
+  logo: require('../Images/logo.png'),
   clearLogo: require('../Images/top_logo.png'),
   launch: require('../Images/launch-icon.png'),
   ready: require('../Images/your-app.png'),
@@ -19,7 +19,12 @@ const images = {
   chevronRight: require('../Images/Icons/chevron-right.png'),
   hamburger: require('../Images/Icons/hamburger.png'),
   backButton: require('../Images/Icons/back-button.png'),
-  closeButton: require('../Images/Icons/close-button.png')
+  closeButton: require('../Images/Icons/close-button.png'),
+  background_login: require('../Images/background_login.png'),
+  user_icon: require('../Images/Icons/user_icon.png'),
+  password_icon: require('../Images/Icons/password_icon.png'),
+  icon_google: require('../Images/Icons/icon_google.png'),
+  icon_facebook: require('../Images/Icons/icon_facebook.png')
 }
 
 export default images
