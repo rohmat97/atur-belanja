@@ -24,7 +24,10 @@ const images = {
   user_icon: require('../Images/Icons/user_icon.png'),
   password_icon: require('../Images/Icons/password_icon.png'),
   icon_google: require('../Images/Icons/icon_google.png'),
-  icon_facebook: require('../Images/Icons/icon_facebook.png')
+  icon_facebook: require('../Images/Icons/icon_facebook.png'),
+  background_singup: require('../Images/background_singup.png'),
+  icon_notif: require('../Images/Icons/notif.png'),
+  icon_gift: require('../Images/Icons/gift.png')
 }
 
 export default images

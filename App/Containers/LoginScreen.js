@@ -38,7 +38,7 @@ class LoginScreen extends Component {
     return (
       <ScrollView>
       <View style={{flex:1}}> 
-      <KeyboardAvoidingView  style={{flex:1, alignItems:'center',width:'100%'}}>
+      <KeyboardAvoidingView  style={{flex:1, alignItems:'center',width:'100%',padding:8}}>
          <Header
           centerComponent={<Image source={Images.logo} style={{width:Dimensions.get('screen').width*0.3,height:Dimensions.get('screen').height*0.05}}/>}
           rightComponent={
@@ -50,6 +50,7 @@ class LoginScreen extends Component {
             </TouchableOpacity>
           }
           backgroundColor={'#fff'}
+          containerStyle={{marginTop:-8}}
         /> 
         <View style={{width:'100%', alignItems:'center'}}>
           <Image source={Images.background_login} style={styles.logo} />
@@ -81,7 +82,7 @@ class LoginScreen extends Component {
         </View>
         <View style={{justifyContent:'space-around',alignItems:'center',flexDirection:'row',width:'100%'}}>
           <TouchableOpacity
-            style={{width:width*0.24,alignItems:'center',padding:20, backgroundColor:'#2D4070', borderRadius:8,marginTop:12}}
+            style={{width:width*0.24,alignItems:'center',padding:10, backgroundColor:'#2D4070', borderRadius:8,marginTop:12}}
             onPress={() =>this.Submit()}
           >
             <Text style={{color:'white'}}>SIGN IN</Text>

@@ -55,5 +55,24 @@ export default StyleSheet.create({
     width:250,
     borderRadius:30,
     backgroundColor: "#00BFFF",
-  }
+  },
+  sideBar:{
+    width:'115%',
+    height:'10%',
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'space-around',
+    paddingVertical:10,
+    marginLeft:-18,
+    backgroundColor:'#516085',
+    borderWidth:2,
+    borderColor:'#5D6D96'
+  },
+  iconMenuSideBar:{
+    width:40,
+    height:40, 
+    borderRadius:20,
+    marginLeft:18
+  },
+  textMenuSidebar:{color:'white',fontSize:20,lineHeight:25, fontWeight:'700',width:'50%'}
 })
